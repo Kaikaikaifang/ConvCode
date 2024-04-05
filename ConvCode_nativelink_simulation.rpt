@@ -1,0 +1,413 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneiii
+Quartus root          :  e:/quartus/quartus/bin64/
+Quartus sim root      :  e:/quartus/quartus/eda/sim_lib
+Simulation Tool       :  modelsim
+Simulation Language   :  verilog
+Simulation Mode       :  GUI
+Sim Output File       :  ConvCode.vo
+Sim SDF file          :  ConvCode__verilog.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim software
+Sourced NativeLink script e:/quartus/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File ConvCode_run_msim_gate_verilog.do already exists - backing up current file as ConvCode_run_msim_gate_verilog.do.bak11
+Probing transcript
+ModelSim Info: # Reading E:/Modelsim/tcl/vsim/pref.tcl
+ModelSim Info: # //  ModelSim SE-64 10.5 Feb 13 2016 
+ModelSim Info: # //
+ModelSim Info: # //  Copyright 1991-2016 Mentor Graphics Corporation
+ModelSim Info: # //  All Rights Reserved.
+ModelSim Info: # //
+ModelSim Info: # //  ModelSim SE-64 and its associated documentation contain trade
+ModelSim Info: # //  secrets and commercial or financial information that are the property of
+ModelSim Info: # //  Mentor Graphics Corporation and are privileged, confidential,
+ModelSim Info: # //  and exempt from disclosure under the Freedom of Information Act,
+ModelSim Info: # //  5 U.S.C. Section 552. Furthermore, this information
+ModelSim Info: # //  is prohibited from disclosure under the Trade Secrets Act,
+ModelSim Info: # //  18 U.S.C. Section 1905.
+ModelSim Info: # //
+ModelSim Info: # do ConvCode_run_msim_gate_verilog.do
+ModelSim Info: # if ![file isdirectory verilog_libs] {
+ModelSim Info: # 	file mkdir verilog_libs
+ModelSim Info: # }
+ModelSim Info: # 
+ModelSim Info: # vlib verilog_libs/altera_ver
+ModelSim Warning: # ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
+ModelSim Info: # vmap altera_ver ./verilog_libs/altera_ver
+ModelSim Info: # Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+ModelSim Info: # vmap altera_ver ./verilog_libs/altera_ver 
+ModelSim Info: # Copying E:/Modelsim/win64/../modelsim.ini to modelsim.ini
+ModelSim Info: # Modifying modelsim.ini
+ModelSim Info: # vlog -vlog01compat -work altera_ver {e:/quartus/quartus/eda/sim_lib/altera_primitives.v}
+ModelSim Info: # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+ModelSim Info: # Start time: 22:04:25 on Apr 05,2024
+ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work altera_ver e:/quartus/quartus/eda/sim_lib/altera_primitives.v 
+ModelSim Info: # -- Compiling module global
+ModelSim Info: # -- Compiling module carry
+ModelSim Info: # -- Compiling module cascade
+ModelSim Info: # -- Compiling module carry_sum
+ModelSim Info: # -- Compiling module exp
+ModelSim Info: # -- Compiling module soft
+ModelSim Info: # -- Compiling module opndrn
+ModelSim Info: # -- Compiling module row_global
+ModelSim Info: # -- Compiling module TRI
+ModelSim Info: # -- Compiling module lut_input
+ModelSim Info: # -- Compiling module lut_output
+ModelSim Info: # -- Compiling module latch
+ModelSim Info: # -- Compiling module dlatch
+ModelSim Info: # -- Compiling module prim_gdff
+ModelSim Info: # -- Compiling module dff
+ModelSim Info: # -- Compiling module dffe
+ModelSim Info: # -- Compiling module dffea
+ModelSim Info: # -- Compiling module dffeas
+ModelSim Info: # -- Compiling module prim_gtff
+ModelSim Info: # -- Compiling module tff
+ModelSim Info: # -- Compiling module tffe
+ModelSim Info: # -- Compiling module prim_gjkff
+ModelSim Info: # -- Compiling module jkff
+ModelSim Info: # -- Compiling module jkffe
+ModelSim Info: # -- Compiling module prim_gsrff
+ModelSim Info: # -- Compiling module srff
+ModelSim Info: # -- Compiling module srffe
+ModelSim Info: # -- Compiling module clklock
+ModelSim Info: # -- Compiling module alt_inbuf
+ModelSim Info: # -- Compiling module alt_outbuf
+ModelSim Info: # -- Compiling module alt_outbuf_tri
+ModelSim Info: # -- Compiling module alt_iobuf
+ModelSim Info: # -- Compiling module alt_inbuf_diff
+ModelSim Info: # -- Compiling module alt_outbuf_diff
+ModelSim Info: # -- Compiling module alt_outbuf_tri_diff
+ModelSim Info: # -- Compiling module alt_iobuf_diff
+ModelSim Info: # -- Compiling module alt_bidir_diff
+ModelSim Info: # -- Compiling module alt_bidir_buf
+ModelSim Info: # -- Compiling UDP PRIM_GDFF_LOW
+ModelSim Info: # -- Compiling UDP PRIM_GDFF_HIGH
+ModelSim Info: # 
+ModelSim Info: # Top level modules:
+ModelSim Info: # 	global
+ModelSim Info: # 	carry
+ModelSim Info: # 	cascade
+ModelSim Info: # 	carry_sum
+ModelSim Info: # 	exp
+ModelSim Info: # 	soft
+ModelSim Info: # 	opndrn
+ModelSim Info: # 	row_global
+ModelSim Info: # 	TRI
+ModelSim Info: # 	lut_input
+ModelSim Info: # 	lut_output
+ModelSim Info: # 	latch
+ModelSim Info: # 	dlatch
+ModelSim Info: # 	dff
+ModelSim Info: # 	dffe
+ModelSim Info: # 	dffea
+ModelSim Info: # 	dffeas
+ModelSim Info: # 	tff
+ModelSim Info: # 	tffe
+ModelSim Info: # 	jkff
+ModelSim Info: # 	jkffe
+ModelSim Info: # 	srff
+ModelSim Info: # 	srffe
+ModelSim Info: # 	clklock
+ModelSim Info: # 	alt_inbuf
+ModelSim Info: # 	alt_outbuf
+ModelSim Info: # 	alt_outbuf_tri
+ModelSim Info: # 	alt_iobuf
+ModelSim Info: # 	alt_inbuf_diff
+ModelSim Info: # 	alt_outbuf_diff
+ModelSim Info: # 	alt_outbuf_tri_diff
+ModelSim Info: # 	alt_iobuf_diff
+ModelSim Info: # 	alt_bidir_diff
+ModelSim Info: # 	alt_bidir_buf
+ModelSim Info: # End time: 22:04:25 on Apr 05,2024, Elapsed time: 0:00:00
+ModelSim Info: # Errors: 0, Warnings: 0
+ModelSim Info: # 
+ModelSim Info: # vlib verilog_libs/cycloneiii_ver
+ModelSim Warning: # ** Warning: (vlib-34) Library already exists at "verilog_libs/cycloneiii_ver".
+ModelSim Info: # vmap cycloneiii_ver ./verilog_libs/cycloneiii_ver
+ModelSim Info: # Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+ModelSim Info: # vmap cycloneiii_ver ./verilog_libs/cycloneiii_ver 
+ModelSim Info: # Modifying modelsim.ini
+ModelSim Info: # vlog -vlog01compat -work cycloneiii_ver {e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v}
+ModelSim Info: # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+ModelSim Info: # Start time: 22:04:25 on Apr 05,2024
+ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work cycloneiii_ver e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v 
+ModelSim Info: # -- Compiling UDP CYCLONEIII_PRIM_DFFE
+ModelSim Info: # -- Compiling UDP CYCLONEIII_PRIM_DFFEAS
+ModelSim Info: # -- Compiling UDP CYCLONEIII_PRIM_DFFEAS_HIGH
+ModelSim Info: # -- Compiling module cycloneiii_dffe
+ModelSim Info: # -- Compiling module cycloneiii_mux21
+ModelSim Info: # -- Compiling module cycloneiii_mux41
+ModelSim Info: # -- Compiling module cycloneiii_and1
+ModelSim Info: # -- Compiling module cycloneiii_and16
+ModelSim Info: # -- Compiling module cycloneiii_bmux21
+ModelSim Info: # -- Compiling module cycloneiii_b17mux21
+ModelSim Info: # -- Compiling module cycloneiii_nmux21
+ModelSim Info: # -- Compiling module cycloneiii_b5mux21
+ModelSim Info: # -- Compiling module cycloneiii_latch
+ModelSim Info: # -- Compiling module cycloneiii_routing_wire
+ModelSim Info: # -- Compiling module cycloneiii_m_cntr
+ModelSim Info: # -- Compiling module cycloneiii_n_cntr
+ModelSim Info: # -- Compiling module cycloneiii_scale_cntr
+ModelSim Info: # -- Compiling module cycloneiii_pll_reg
+ModelSim Info: # -- Compiling module cycloneiii_pll
+ModelSim Info: # -- Compiling module cycloneiii_lcell_comb
+ModelSim Info: # -- Compiling module cycloneiii_ff
+ModelSim Info: # -- Compiling module cycloneiii_ram_pulse_generator
+ModelSim Info: # -- Compiling module cycloneiii_ram_register
+ModelSim Info: # -- Compiling module cycloneiii_ram_block
+ModelSim Info: # -- Compiling module cycloneiii_mac_data_reg
+ModelSim Info: # -- Compiling module cycloneiii_mac_sign_reg
+ModelSim Info: # -- Compiling module cycloneiii_mac_mult_internal
+ModelSim Info: # -- Compiling module cycloneiii_mac_mult
+ModelSim Info: # -- Compiling module cycloneiii_mac_out
+ModelSim Info: # -- Compiling module cycloneiii_io_ibuf
+ModelSim Info: # -- Compiling module cycloneiii_io_obuf
+ModelSim Info: # -- Compiling module cycloneiii_ddio_out
+ModelSim Info: # -- Compiling module cycloneiii_ddio_oe
+ModelSim Info: # -- Compiling module cycloneiii_pseudo_diff_out
+ModelSim Info: # -- Compiling module cycloneiii_io_pad
+ModelSim Info: # -- Compiling module cycloneiii_ena_reg
+ModelSim Info: # -- Compiling module cycloneiii_clkctrl
+ModelSim Info: # -- Compiling module cycloneiii_rublock
+ModelSim Info: # -- Compiling module cycloneiii_apfcontroller
+ModelSim Info: # -- Compiling module cycloneiii_termination_ctrl
+ModelSim Info: # -- Compiling module cycloneiii_termination_rupdn
+ModelSim Info: # -- Compiling module cycloneiii_termination
+ModelSim Info: # -- Compiling module cycloneiii_jtag
+ModelSim Info: # -- Compiling module cycloneiii_crcblock
+ModelSim Info: # -- Compiling module cycloneiii_oscillator
+ModelSim Info: # 
+ModelSim Info: # Top level modules:
+ModelSim Info: # 	cycloneiii_dffe
+ModelSim Info: # 	cycloneiii_and1
+ModelSim Info: # 	cycloneiii_and16
+ModelSim Info: # 	cycloneiii_bmux21
+ModelSim Info: # 	cycloneiii_b17mux21
+ModelSim Info: # 	cycloneiii_nmux21
+ModelSim Info: # 	cycloneiii_b5mux21
+ModelSim Info: # 	cycloneiii_pll_reg
+ModelSim Info: # 	cycloneiii_pll
+ModelSim Info: # 	cycloneiii_lcell_comb
+ModelSim Info: # 	cycloneiii_ff
+ModelSim Info: # 	cycloneiii_ram_block
+ModelSim Info: # 	cycloneiii_mac_mult
+ModelSim Info: # 	cycloneiii_mac_out
+ModelSim Info: # 	cycloneiii_io_ibuf
+ModelSim Info: # 	cycloneiii_io_obuf
+ModelSim Info: # 	cycloneiii_ddio_out
+ModelSim Info: # 	cycloneiii_ddio_oe
+ModelSim Info: # 	cycloneiii_pseudo_diff_out
+ModelSim Info: # 	cycloneiii_io_pad
+ModelSim Info: # 	cycloneiii_clkctrl
+ModelSim Info: # 	cycloneiii_rublock
+ModelSim Info: # 	cycloneiii_apfcontroller
+ModelSim Info: # 	cycloneiii_termination
+ModelSim Info: # 	cycloneiii_jtag
+ModelSim Info: # 	cycloneiii_crcblock
+ModelSim Info: # 	cycloneiii_oscillator
+ModelSim Info: # End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:01
+ModelSim Info: # Errors: 0, Warnings: 0
+ModelSim Info: # 
+ModelSim Info: # if {[file exists gate_work]} {
+ModelSim Info: # 	vdel -lib gate_work -all
+ModelSim Info: # }
+ModelSim Info: # vlib gate_work
+ModelSim Info: # vmap work gate_work
+ModelSim Info: # Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+ModelSim Info: # vmap work gate_work 
+ModelSim Info: # Modifying modelsim.ini
+ModelSim Info: # 
+ModelSim Info: # vlog -vlog01compat -work work +incdir+. {ConvCode.vo}
+ModelSim Info: # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+ModelSim Info: # Start time: 22:04:26 on Apr 05,2024
+ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." ConvCode.vo 
+ModelSim Info: # -- Compiling module ConvCode
+ModelSim Info: # 
+ModelSim Info: # Top level modules:
+ModelSim Info: # 	ConvCode
+ModelSim Info: # End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:00
+ModelSim Info: # Errors: 0, Warnings: 0
+ModelSim Info: # 
+ModelSim Info: # vlog -vlog01compat -work work +incdir+D:/projects/ConvCode/test {D:/projects/ConvCode/test/ConvCode_tb.v}
+ModelSim Info: # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+ModelSim Info: # Start time: 22:04:26 on Apr 05,2024
+ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/projects/ConvCode/test" D:/projects/ConvCode/test/ConvCode_tb.v 
+ModelSim Info: # -- Compiling module ConvCode_tb
+ModelSim Info: # 
+ModelSim Info: # Top level modules:
+ModelSim Info: # 	ConvCode_tb
+ModelSim Info: # End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:00
+ModelSim Info: # Errors: 0, Warnings: 0
+ModelSim Info: # 
+ModelSim Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc"  ConvCode_tb
+ModelSim Info: # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=""+acc"" ConvCode_tb 
+ModelSim Info: # Start time: 22:04:26 on Apr 05,2024
+ModelSim Info: # ** Note: (vsim-3812) Design is being optimized...
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2685) [TFMPC] - Too few port connections for 'u_ConvCode'.  Expected 8, found 4.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+ModelSim Info: # Loading work.ConvCode_tb(fast)
+ModelSim Info: # Loading work.ConvCode(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_io_obuf(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_io_ibuf(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_clkctrl(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_mux41(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ena_reg(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_jtag(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
+ModelSim Info: # Loading altera_ver.dffeas(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__1)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__2)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__3)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__4)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__5)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__6)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__7)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__8)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__9)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__10)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__11)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__12)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__13)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__14)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__15)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__16)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__17)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__18)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__19)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__20)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__21)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__22)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__23)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__24)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__25)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__26)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__27)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__28)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__29)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__30)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__31)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__32)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__33)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__34)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__35)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__36)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__37)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__38)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__39)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__40)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__41)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__42)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__43)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__44)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__45)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__46)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__47)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__48)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__49)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__50)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__51)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__52)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__53)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__54)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__55)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__56)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__57)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__58)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__59)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__60)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__61)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__62)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__63)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__64)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__65)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__66)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__67)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__68)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__69)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__70)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__71)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__72)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_block(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__1)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__2)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__3)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast__1)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__73)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__74)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__75)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__76)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__77)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__78)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__79)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__80)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__81)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__82)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__83)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__84)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__85)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__86)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__87)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__88)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__89)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__90)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__91)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__92)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__93)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__94)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__95)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__96)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__97)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__98)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__99)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__100)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__101)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__102)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__103)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__104)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__105)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__106)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__107)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__108)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__109)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__110)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__111)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__112)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__113)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__114)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__115)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__116)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__117)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__118)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__119)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__120)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__121)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__122)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__123)
+ModelSim Info: # Loading instances from ConvCode_v.sdo
+ModelSim Info: # Loading timing data from ConvCode_v.sdo
+ModelSim Info: # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+ModelSim Info: #    Time: 0 ps  Iteration: 0  Instance: /ConvCode_tb File: D:/projects/ConvCode/test/ConvCode_tb.v
+ModelSim Info: # 
+ModelSim Info: # add wave *
+ModelSim Info: # 
+ModelSim Info: # view structure
+ModelSim Info: # .main_pane.structure.interior.cs.body.struct
+ModelSim Info: # view signals
+ModelSim Info: # .main_pane.objects.interior.cs.body.tree
+ModelSim Info: # run 200 us
+ModelSim Info: # Causality operation skipped due to absence of debug database file
+ModelSim Info: # End time: 22:24:38 on Apr 05,2024, Elapsed time: 0:20:12
+ModelSim Info: # Errors: 0, Warnings: 6
+Info: NativeLink simulation flow was successful

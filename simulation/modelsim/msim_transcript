@@ -1,0 +1,391 @@
+# Reading E:/Modelsim/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.5 Feb 13 2016 
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do ConvCode_run_msim_gate_verilog.do
+# if ![file isdirectory verilog_libs] {
+# 	file mkdir verilog_libs
+# }
+# 
+# vlib verilog_libs/altera_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/altera_ver".
+# vmap altera_ver ./verilog_libs/altera_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap altera_ver ./verilog_libs/altera_ver 
+# Copying E:/Modelsim/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# vlog -vlog01compat -work altera_ver {e:/quartus/quartus/eda/sim_lib/altera_primitives.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 22:04:25 on Apr 05,2024
+# vlog -reportprogress 300 -vlog01compat -work altera_ver e:/quartus/quartus/eda/sim_lib/altera_primitives.v 
+# -- Compiling module global
+# -- Compiling module carry
+# -- Compiling module cascade
+# -- Compiling module carry_sum
+# -- Compiling module exp
+# -- Compiling module soft
+# -- Compiling module opndrn
+# -- Compiling module row_global
+# -- Compiling module TRI
+# -- Compiling module lut_input
+# -- Compiling module lut_output
+# -- Compiling module latch
+# -- Compiling module dlatch
+# -- Compiling module prim_gdff
+# -- Compiling module dff
+# -- Compiling module dffe
+# -- Compiling module dffea
+# -- Compiling module dffeas
+# -- Compiling module prim_gtff
+# -- Compiling module tff
+# -- Compiling module tffe
+# -- Compiling module prim_gjkff
+# -- Compiling module jkff
+# -- Compiling module jkffe
+# -- Compiling module prim_gsrff
+# -- Compiling module srff
+# -- Compiling module srffe
+# -- Compiling module clklock
+# -- Compiling module alt_inbuf
+# -- Compiling module alt_outbuf
+# -- Compiling module alt_outbuf_tri
+# -- Compiling module alt_iobuf
+# -- Compiling module alt_inbuf_diff
+# -- Compiling module alt_outbuf_diff
+# -- Compiling module alt_outbuf_tri_diff
+# -- Compiling module alt_iobuf_diff
+# -- Compiling module alt_bidir_diff
+# -- Compiling module alt_bidir_buf
+# -- Compiling UDP PRIM_GDFF_LOW
+# -- Compiling UDP PRIM_GDFF_HIGH
+# 
+# Top level modules:
+# 	global
+# 	carry
+# 	cascade
+# 	carry_sum
+# 	exp
+# 	soft
+# 	opndrn
+# 	row_global
+# 	TRI
+# 	lut_input
+# 	lut_output
+# 	latch
+# 	dlatch
+# 	dff
+# 	dffe
+# 	dffea
+# 	dffeas
+# 	tff
+# 	tffe
+# 	jkff
+# 	jkffe
+# 	srff
+# 	srffe
+# 	clklock
+# 	alt_inbuf
+# 	alt_outbuf
+# 	alt_outbuf_tri
+# 	alt_iobuf
+# 	alt_inbuf_diff
+# 	alt_outbuf_diff
+# 	alt_outbuf_tri_diff
+# 	alt_iobuf_diff
+# 	alt_bidir_diff
+# 	alt_bidir_buf
+# End time: 22:04:25 on Apr 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlib verilog_libs/cycloneiii_ver
+# ** Warning: (vlib-34) Library already exists at "verilog_libs/cycloneiii_ver".
+# vmap cycloneiii_ver ./verilog_libs/cycloneiii_ver
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap cycloneiii_ver ./verilog_libs/cycloneiii_ver 
+# Modifying modelsim.ini
+# vlog -vlog01compat -work cycloneiii_ver {e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 22:04:25 on Apr 05,2024
+# vlog -reportprogress 300 -vlog01compat -work cycloneiii_ver e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v 
+# -- Compiling UDP CYCLONEIII_PRIM_DFFE
+# -- Compiling UDP CYCLONEIII_PRIM_DFFEAS
+# -- Compiling UDP CYCLONEIII_PRIM_DFFEAS_HIGH
+# -- Compiling module cycloneiii_dffe
+# -- Compiling module cycloneiii_mux21
+# -- Compiling module cycloneiii_mux41
+# -- Compiling module cycloneiii_and1
+# -- Compiling module cycloneiii_and16
+# -- Compiling module cycloneiii_bmux21
+# -- Compiling module cycloneiii_b17mux21
+# -- Compiling module cycloneiii_nmux21
+# -- Compiling module cycloneiii_b5mux21
+# -- Compiling module cycloneiii_latch
+# -- Compiling module cycloneiii_routing_wire
+# -- Compiling module cycloneiii_m_cntr
+# -- Compiling module cycloneiii_n_cntr
+# -- Compiling module cycloneiii_scale_cntr
+# -- Compiling module cycloneiii_pll_reg
+# -- Compiling module cycloneiii_pll
+# -- Compiling module cycloneiii_lcell_comb
+# -- Compiling module cycloneiii_ff
+# -- Compiling module cycloneiii_ram_pulse_generator
+# -- Compiling module cycloneiii_ram_register
+# -- Compiling module cycloneiii_ram_block
+# -- Compiling module cycloneiii_mac_data_reg
+# -- Compiling module cycloneiii_mac_sign_reg
+# -- Compiling module cycloneiii_mac_mult_internal
+# -- Compiling module cycloneiii_mac_mult
+# -- Compiling module cycloneiii_mac_out
+# -- Compiling module cycloneiii_io_ibuf
+# -- Compiling module cycloneiii_io_obuf
+# -- Compiling module cycloneiii_ddio_out
+# -- Compiling module cycloneiii_ddio_oe
+# -- Compiling module cycloneiii_pseudo_diff_out
+# -- Compiling module cycloneiii_io_pad
+# -- Compiling module cycloneiii_ena_reg
+# -- Compiling module cycloneiii_clkctrl
+# -- Compiling module cycloneiii_rublock
+# -- Compiling module cycloneiii_apfcontroller
+# -- Compiling module cycloneiii_termination_ctrl
+# -- Compiling module cycloneiii_termination_rupdn
+# -- Compiling module cycloneiii_termination
+# -- Compiling module cycloneiii_jtag
+# -- Compiling module cycloneiii_crcblock
+# -- Compiling module cycloneiii_oscillator
+# 
+# Top level modules:
+# 	cycloneiii_dffe
+# 	cycloneiii_and1
+# 	cycloneiii_and16
+# 	cycloneiii_bmux21
+# 	cycloneiii_b17mux21
+# 	cycloneiii_nmux21
+# 	cycloneiii_b5mux21
+# 	cycloneiii_pll_reg
+# 	cycloneiii_pll
+# 	cycloneiii_lcell_comb
+# 	cycloneiii_ff
+# 	cycloneiii_ram_block
+# 	cycloneiii_mac_mult
+# 	cycloneiii_mac_out
+# 	cycloneiii_io_ibuf
+# 	cycloneiii_io_obuf
+# 	cycloneiii_ddio_out
+# 	cycloneiii_ddio_oe
+# 	cycloneiii_pseudo_diff_out
+# 	cycloneiii_io_pad
+# 	cycloneiii_clkctrl
+# 	cycloneiii_rublock
+# 	cycloneiii_apfcontroller
+# 	cycloneiii_termination
+# 	cycloneiii_jtag
+# 	cycloneiii_crcblock
+# 	cycloneiii_oscillator
+# End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim SE-64 vmap 10.5 Lib Mapping Utility 2016.02 Feb 13 2016
+# vmap work gate_work 
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+. {ConvCode.vo}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 22:04:26 on Apr 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+." ConvCode.vo 
+# -- Compiling module ConvCode
+# 
+# Top level modules:
+# 	ConvCode
+# End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/projects/ConvCode/test {D:/projects/ConvCode/test/ConvCode_tb.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 22:04:26 on Apr 05,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/projects/ConvCode/test" D:/projects/ConvCode/test/ConvCode_tb.v 
+# -- Compiling module ConvCode_tb
+# 
+# Top level modules:
+# 	ConvCode_tb
+# End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc"  ConvCode_tb
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=""+acc"" ConvCode_tb 
+# Start time: 22:04:26 on Apr 05,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2685) [TFMPC] - Too few port connections for 'u_ConvCode'.  Expected 8, found 4.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# Loading work.ConvCode_tb(fast)
+# Loading work.ConvCode(fast)
+# Loading cycloneiii_ver.cycloneiii_io_obuf(fast)
+# Loading cycloneiii_ver.cycloneiii_io_ibuf(fast)
+# Loading cycloneiii_ver.cycloneiii_clkctrl(fast)
+# Loading cycloneiii_ver.cycloneiii_mux41(fast)
+# Loading cycloneiii_ver.cycloneiii_ena_reg(fast)
+# Loading cycloneiii_ver.cycloneiii_jtag(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
+# Loading altera_ver.dffeas(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__1)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__2)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__3)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__4)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__5)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__6)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__7)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__8)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__9)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__10)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__11)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__12)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__13)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__14)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__15)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__16)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__17)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__18)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__19)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__20)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__21)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__22)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__23)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__24)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__25)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__26)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__27)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__28)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__29)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__30)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__31)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__32)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__33)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__34)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__35)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__36)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__37)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__38)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__39)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__40)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__41)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__42)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__43)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__44)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__45)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__46)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__47)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__48)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__49)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__50)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__51)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__52)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__53)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__54)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__55)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__56)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__57)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__58)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__59)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__60)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__61)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__62)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__63)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__64)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__65)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__66)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__67)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__68)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__69)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__70)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__71)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__72)
+# Loading cycloneiii_ver.cycloneiii_ram_block(fast)
+# Loading cycloneiii_ver.cycloneiii_ram_register(fast)
+# Loading cycloneiii_ver.cycloneiii_ram_register(fast__1)
+# Loading cycloneiii_ver.cycloneiii_ram_register(fast__2)
+# Loading cycloneiii_ver.cycloneiii_ram_register(fast__3)
+# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast)
+# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast__1)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__73)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__74)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__75)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__76)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__77)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__78)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__79)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__80)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__81)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__82)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__83)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__84)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__85)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__86)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__87)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__88)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__89)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__90)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__91)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__92)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__93)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__94)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__95)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__96)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__97)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__98)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__99)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__100)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__101)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__102)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__103)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__104)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__105)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__106)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__107)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__108)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__109)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__110)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__111)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__112)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__113)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__114)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__115)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__116)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__117)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__118)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__119)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__120)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__121)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__122)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__123)
+# Loading instances from ConvCode_v.sdo
+# Loading timing data from ConvCode_v.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /ConvCode_tb File: D:/projects/ConvCode/test/ConvCode_tb.v
+# 
+# add wave *
+# 
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 200 us
+# Causality operation skipped due to absence of debug database file
+# End time: 22:24:38 on Apr 05,2024, Elapsed time: 0:20:12
+# Errors: 0, Warnings: 6

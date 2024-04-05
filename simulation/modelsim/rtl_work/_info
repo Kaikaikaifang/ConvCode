@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/projects/ConvCode/simulation/modelsim
+vConvCode
+Z1 !s110 1712323977
+!i10b 1
+!s100 T3?_m:kCJJTc^lWZ>?_063
+ImzWgboS?YH?T7kG4V1f130
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1712323878
+8D:/projects/ConvCode/src/ConvCode.v
+FD:/projects/ConvCode/src/ConvCode.v
+L0 22
+Z3 OL;L;10.5;63
+r1
+!s85 0
+31
+Z4 !s108 1712323977.000000
+!s107 D:/projects/ConvCode/src/ConvCode.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/projects/ConvCode/src|D:/projects/ConvCode/src/ConvCode.v|
+!i113 0
+Z5 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/projects/ConvCode/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z6 tCvgOpt 0
+n@conv@code
+vConvCode_tb
+R1
+!i10b 1
+!s100 BW49XAafnXbDXk>B5[P2b3
+ImPXbFizKjjSf[7HgDVnC41
+R2
+R0
+w1712323961
+8D:/projects/ConvCode/test/ConvCode_tb.v
+FD:/projects/ConvCode/test/ConvCode_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/projects/ConvCode/test/ConvCode_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/projects/ConvCode/test|D:/projects/ConvCode/test/ConvCode_tb.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/projects/ConvCode/test -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+n@conv@code_tb
+vcounter
+R1
+!i10b 1
+!s100 kPKS?ZdU0]lAldG1Cjl?F3
+I8?Lb?]mg6<Y<McG_GI=4;0
+R2
+R0
+w1712323329
+8D:/projects/ConvCode/src/common/counter.v
+FD:/projects/ConvCode/src/common/counter.v
+L0 18
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/projects/ConvCode/src/common/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/projects/ConvCode/src/common|D:/projects/ConvCode/src/common/counter.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/projects/ConvCode/src/common -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vrom
+R1
+!i10b 1
+!s100 gZX7GEVI_PWmFXE3ZfJD?1
+I?oQD]eH=>2a2?IKUKJ7c`2
+R2
+R0
+w1712313964
+8D:/projects/ConvCode/src/ip/rom.v
+FD:/projects/ConvCode/src/ip/rom.v
+L0 39
+R3
+r1
+!s85 0
+31
+R4
+!s107 D:/projects/ConvCode/src/ip/rom.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/projects/ConvCode/src/ip|D:/projects/ConvCode/src/ip/rom.v|
+!i113 0
+R5
+!s92 -vlog01compat -work work +incdir+D:/projects/ConvCode/src/ip -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
