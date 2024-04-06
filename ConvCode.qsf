@@ -65,11 +65,11 @@ set_global_assignment -name EDA_TEST_BENCH_NAME ConvCode_tb -section_id eda_simu
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ConvCode_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "200 us" -section_id ConvCode_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ConvCode_tb -section_id ConvCode_tb
-set_global_assignment -name EDA_TEST_BENCH_FILE test/ConvCode_tb.v -section_id ConvCode_tb
 set_global_assignment -name VERILOG_FILE src/common/parallel2serial.v
 set_global_assignment -name VERILOG_FILE src/common/div.v
 set_global_assignment -name VERILOG_FILE src/service/encode.v
 set_global_assignment -name VERILOG_FILE src/common/counter.v
 set_global_assignment -name VERILOG_FILE src/ConvCode.v
 set_global_assignment -name QIP_FILE src/ip/rom.qip
+set_global_assignment -name EDA_TEST_BENCH_FILE test/ConvCode_tb.v -section_id ConvCode_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
