@@ -15,12 +15,9 @@ module ConvCode_tb;
     wire [1:0] encode_sig;
     wire [0:0] serial_encode_sig;
     // wire [0:0] decode_sig;
-    // wire [0:0] noise_sig;
-    // wire [0:0] encode_noise_sig;
+    wire [0:0] noise_sig;
+    wire [0:0] encode_noise_sig;
     wire [0:0] q_sig;
-
-    // middle signal
-    wire [1:0] buffer_sig;
 
     /*iverilog */
     initial begin
@@ -44,13 +41,10 @@ module ConvCode_tb;
         .encode_sig       (encode_sig[1:0]),
         .serial_encode_sig(serial_encode_sig[0:0]),
         // .decode_sig      (decode_sig[0:0]),
-        // .noise_sig       (noise_sig[0:0]),
-        // .encode_noise_sig(encode_noise_sig[0:0]),
+        .noise_sig        (noise_sig[0:0]),
+        .encode_noise_sig (encode_noise_sig[0:0]),
 
-        .q_sig(q_sig[0:0]),
-
-        // middle signal
-        .buffer_sig(buffer_sig[1:0])
+        .q_sig(q_sig[0:0])
     );
 
     initial begin

@@ -23,15 +23,13 @@ module ConvCode (
     input             reset_sig,          // 复位信号 低电平有效
     output wire [1:0] encode_sig,         // 编码后信号
     output wire [0:0] serial_encode_sig,
-    // output reg [ 0:0] decode_sig,
-    // output reg [ 0:0] noise_sig,
-    // output reg [ 0:0] encode_noise_sig,
-    output wire [0:0] q_sig,              // 信源信号
-
-    output wire [1:0] buffer_sig
+    output wire [0:0] decode_sig,
+    output wire [0:0] noise_sig,
+    output wire [0:0] encode_noise_sig,
+    output wire [0:0] q_sig               // 信源信号
 );
     wire [10:0] address_sig;
-    wire        clk10M_sig;
+    wire [ 0:0] clk10M_sig;
 
     // 0. 二分频生成 10 MHz 时钟信号
     div #(
@@ -68,10 +66,19 @@ module ConvCode (
     parallel2serial #(
         .WIDTH(2)
     ) parallel2serial_inst (
-        .clk_sig     (clk20M_sig),         // 2 * WIDTH * 5 MHz = 20 MHz
+        .clk_sig     (clk20M_sig),        // 2 * WIDTH * 5 MHz = 20 MHz
         .reset_sig   (reset_sig),
-        .parallel_sig(encode_sig),         // 编码后信号 2 位 5 MHz
-        .serial_sig  (serial_encode_sig),
-        .buffer_sig  (buffer_sig)
+        .parallel_sig(encode_sig),        // 编码后信号 2 位 5 MHz
+        .serial_sig  (serial_encode_sig)  // 串行信号 1 位 10 MHz
     );
+    // 5. 加噪声信号
+    noise #(
+        .INTERVAL(15)
+    ) noise_inst (
+        .clk_sig  (clk20M_sig),
+        .reset_sig(reset_sig),
+        .noise_sig(noise_sig)
+    );
+
+    assign encode_noise_sig = serial_encode_sig ^ noise_sig;
 endmodule
