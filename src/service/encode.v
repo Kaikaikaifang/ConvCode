@@ -43,7 +43,7 @@ module encode (
         if (!reset_sig) begin
             encode_sig <= 2'b00;
         end else begin
-            encode_sig <= {q_sig + state_sig[1] + state_sig[2], q_sig + state_sig[2]};
+            encode_sig <= {q_sig ^ state_sig[1] ^ state_sig[2], q_sig ^ state_sig[2]};
         end
     end
 endmodule
