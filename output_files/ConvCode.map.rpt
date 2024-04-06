@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ConvCode
-Fri Apr 05 22:04:07 2024
+Sat Apr 06 13:35:21 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -15,16 +15,22 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
   9. Analysis & Synthesis IP Cores Summary
- 10. General Register Statistics
- 11. Inverted Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Source assignments for rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|altsyncram_ebd2:altsyncram1
- 14. Parameter Settings for User Entity Instance: counter:counter_inst
- 15. Parameter Settings for User Entity Instance: rom:rom_inst|altsyncram:altsyncram_component
- 16. altsyncram Parameter Settings by Entity Instance
- 17. In-System Memory Content Editor Settings
- 18. Elapsed Time Per Partition
- 19. Analysis & Synthesis Messages
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Source assignments for rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|altsyncram_ebd2:altsyncram1
+ 15. Parameter Settings for User Entity Instance: div:div_inst
+ 16. Parameter Settings for User Entity Instance: div:div_inst|counter:counter_inst
+ 17. Parameter Settings for User Entity Instance: counter:counter_inst
+ 18. Parameter Settings for User Entity Instance: rom:rom_inst|altsyncram:altsyncram_component
+ 19. Parameter Settings for User Entity Instance: parallel2serial:parallel2serial_inst
+ 20. Parameter Settings for User Entity Instance: parallel2serial:parallel2serial_inst|counter:counter_inst
+ 21. altsyncram Parameter Settings by Entity Instance
+ 22. Port Connectivity Checks: "div:div_inst|counter:counter_inst"
+ 23. In-System Memory Content Editor Settings
+ 24. Elapsed Time Per Partition
+ 25. Analysis & Synthesis Messages
 
 
 
@@ -50,16 +56,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Apr 05 22:04:07 2024      ;
+; Analysis & Synthesis Status        ; Successful - Sat Apr 06 13:35:21 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ConvCode                                   ;
 ; Top-level Entity Name              ; ConvCode                                   ;
 ; Family                             ; Cyclone III                                ;
-; Total logic elements               ; 203                                        ;
-;     Total combinational functions  ; 178                                        ;
-;     Dedicated logic registers      ; 121                                        ;
-; Total registers                    ; 121                                        ;
-; Total pins                         ; 5                                          ;
+; Total logic elements               ; 205                                        ;
+;     Total combinational functions  ; 179                                        ;
+;     Dedicated logic registers      ; 125                                        ;
+; Total registers                    ; 125                                        ;
+; Total pins                         ; 8                                          ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 2,048                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                          ;
@@ -170,6 +176,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                     ; Library ;
 +----------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------+---------+
+; src/common/parallel2serial.v     ; yes             ; User Verilog HDL File                  ; D:/projects/ConvCode/src/common/parallel2serial.v                ;         ;
+; src/common/div.v                 ; yes             ; User Verilog HDL File                  ; D:/projects/ConvCode/src/common/div.v                            ;         ;
 ; src/service/encode.v             ; yes             ; User Verilog HDL File                  ; D:/projects/ConvCode/src/service/encode.v                        ;         ;
 ; src/common/counter.v             ; yes             ; User Verilog HDL File                  ; D:/projects/ConvCode/src/common/counter.v                        ;         ;
 ; src/ConvCode.v                   ; yes             ; User Verilog HDL File                  ; D:/projects/ConvCode/src/ConvCode.v                              ;         ;
@@ -198,29 +206,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimated Total logic elements              ; 203                      ;
+; Estimated Total logic elements              ; 205                      ;
 ;                                             ;                          ;
-; Total combinational functions               ; 178                      ;
+; Total combinational functions               ; 179                      ;
 ; Logic element usage by number of LUT inputs ;                          ;
-;     -- 4 input functions                    ; 73                       ;
-;     -- 3 input functions                    ; 38                       ;
+;     -- 4 input functions                    ; 75                       ;
+;     -- 3 input functions                    ; 37                       ;
 ;     -- <=2 input functions                  ; 67                       ;
 ;                                             ;                          ;
 ; Logic elements by mode                      ;                          ;
-;     -- normal mode                          ; 150                      ;
+;     -- normal mode                          ; 151                      ;
 ;     -- arithmetic mode                      ; 28                       ;
 ;                                             ;                          ;
-; Total registers                             ; 121                      ;
-;     -- Dedicated logic registers            ; 121                      ;
+; Total registers                             ; 125                      ;
+;     -- Dedicated logic registers            ; 125                      ;
 ;     -- I/O registers                        ; 0                        ;
 ;                                             ;                          ;
-; I/O pins                                    ; 5                        ;
+; I/O pins                                    ; 8                        ;
 ; Total memory bits                           ; 2048                     ;
 ; Embedded Multiplier 9-bit elements          ; 0                        ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 131                      ;
-; Total fan-out                               ; 984                      ;
-; Average fan-out                             ; 3.08                     ;
+; Total fan-out                               ; 1003                     ;
+; Average fan-out                             ; 3.04                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -229,17 +237,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                                             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                   ; Library Name ;
 +------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |ConvCode                                                              ; 178 (1)           ; 121 (0)      ; 2048        ; 0            ; 0       ; 0         ; 5    ; 0            ; |ConvCode                                                                                                                                                             ; work         ;
+; |ConvCode                                                              ; 179 (1)           ; 125 (0)      ; 2048        ; 0            ; 0       ; 0         ; 8    ; 0            ; |ConvCode                                                                                                                                                             ; work         ;
 ;    |counter:counter_inst|                                              ; 15 (15)           ; 11 (11)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|counter:counter_inst                                                                                                                                        ; work         ;
+;    |div:div_inst|                                                      ; 1 (1)             ; 2 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|div:div_inst                                                                                                                                                ; work         ;
+;       |counter:counter_inst|                                           ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|div:div_inst|counter:counter_inst                                                                                                                           ; work         ;
 ;    |encode:encode_inst|                                                ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|encode:encode_inst                                                                                                                                          ; work         ;
+;    |parallel2serial:parallel2serial_inst|                              ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|parallel2serial:parallel2serial_inst                                                                                                                        ; work         ;
 ;    |rom:rom_inst|                                                      ; 44 (0)            ; 26 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|rom:rom_inst                                                                                                                                                ; work         ;
 ;       |altsyncram:altsyncram_component|                                ; 44 (0)            ; 26 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component                                                                                                                ; work         ;
 ;          |altsyncram_urb1:auto_generated|                              ; 44 (0)            ; 26 (0)       ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated                                                                                 ; work         ;
 ;             |altsyncram_ebd2:altsyncram1|                              ; 0 (0)             ; 0 (0)        ; 2048        ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|altsyncram_ebd2:altsyncram1                                                     ; work         ;
 ;             |sld_mod_ram_rom:mgl_prim2|                                ; 44 (24)           ; 26 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|sld_mod_ram_rom:mgl_prim2                                                       ; work         ;
 ;                |sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr| ; 20 (20)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr ; work         ;
-;    |sld_hub:auto_hub|                                                  ; 114 (1)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|sld_hub:auto_hub                                                                                                                                            ; work         ;
-;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                   ; 113 (76)          ; 80 (52)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                               ; work         ;
+;    |sld_hub:auto_hub|                                                  ; 112 (1)           ; 80 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|sld_hub:auto_hub                                                                                                                                            ; work         ;
+;       |sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|                   ; 111 (74)          ; 80 (52)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst                                                                                               ; work         ;
 ;          |sld_rom_sr:hub_info_reg|                                     ; 20 (20)           ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg                                                                       ; work         ;
 ;          |sld_shadow_jsm:shadow_jsm|                                   ; 17 (17)           ; 19 (19)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_shadow_jsm:shadow_jsm                                                                     ; work         ;
 +------------------------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
@@ -264,12 +275,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------+--------------+---------+--------------+--------------+------------------------+-----------------------------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                        ;
++---------------------------------------------------------------------------+---------------------------------------------------------------+
+; Register name                                                             ; Reason for Removal                                            ;
++---------------------------------------------------------------------------+---------------------------------------------------------------+
+; parallel2serial:parallel2serial_inst|counter:counter_inst|counter_sig[-1] ; Merged with div:div_inst|counter:counter_inst|counter_sig[-1] ;
+; parallel2serial:parallel2serial_inst|counter:counter_inst|counter_sig[0]  ; Merged with div:div_inst|counter:counter_inst|counter_sig[0]  ;
+; div:div_inst|counter:counter_inst|counter_sig[-1]                         ; Stuck at GND due to stuck port data_in                        ;
+; Total Number of Removed Registers = 3                                     ;                                                               ;
++---------------------------------------------------------------------------+---------------------------------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 121   ;
+; Total registers                              ; 125   ;
 ; Number of registers using Synchronous Clear  ; 23    ;
 ; Number of registers using Synchronous Load   ; 22    ;
 ; Number of registers using Asynchronous Clear ; 45    ;
@@ -297,13 +320,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 11 bits   ; 22 LEs        ; 11 LEs               ; 11 LEs                 ; Yes        ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[0]                                                   ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |ConvCode|parallel2serial:parallel2serial_inst|buffer_sig[0]                                                                                                                          ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 4 LEs                ; 8 LEs                  ; Yes        ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|word_counter[0] ;
-; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[3]      ;
+; 16:1               ; 4 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |ConvCode|rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr|WORD_SR[0]      ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|hub_minor_ver_reg[0]                                                                                          ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|mixer_addr_reg[4]                                                                                             ;
 ; 5:1                ; 5 bits    ; 15 LEs        ; 5 LEs                ; 10 LEs                 ; Yes        ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|word_counter[1]                                                                       ;
 ; 6:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|irsr_reg[2]                                                                                                   ;
-; 34:1               ; 4 bits    ; 88 LEs        ; 64 LEs               ; 24 LEs                 ; Yes        ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                                                                                            ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 52 LEs               ; 36 LEs                 ; Yes        ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|design_hash_reg[3]                                                                                            ;
 ; 20:1               ; 4 bits    ; 52 LEs        ; 32 LEs               ; 20 LEs                 ; Yes        ; |ConvCode|sld_hub:auto_hub|sld_jtag_hub:\jtag_hub_gen:sld_jtag_hub_inst|sld_rom_sr:hub_info_reg|WORD_SR[1]                                                                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
@@ -317,13 +341,33 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------+--------------------+------+------------------------------------------------------------------+
 
 
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:div_inst ;
++----------------+-------+----------------------------------+
+; Parameter Name ; Value ; Type                             ;
++----------------+-------+----------------------------------+
+; NUM            ; 2     ; Signed Integer                   ;
+; DUTY           ; 1     ; Signed Integer                   ;
++----------------+-------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: div:div_inst|counter:counter_inst ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; NUM            ; 1     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: counter:counter_inst ;
 +----------------+-------------+------------------------------------+
 ; Parameter Name ; Value       ; Type                               ;
 +----------------+-------------+------------------------------------+
 ; NUM            ; 11111111111 ; Unsigned Binary                    ;
-; LEN            ; 11          ; Signed Integer                     ;
 +----------------+-------------+------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -389,6 +433,26 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: parallel2serial:parallel2serial_inst ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; WIDTH          ; 2     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: parallel2serial:parallel2serial_inst|counter:counter_inst ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; NUM            ; 1     ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +------------------------------------------------------------------------------------------+
 ; altsyncram Parameter Settings by Entity Instance                                         ;
 +-------------------------------------------+----------------------------------------------+
@@ -407,6 +471,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
 ;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
 +-------------------------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "div:div_inst|counter:counter_inst"                                                                                                      ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                          ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
+; counter_sig ; Output ; Warning  ; Output or bidir port (2 bits) is wider than the port expression (1 bits) it drives; bit(s) "counter_sig[-1..-1]" have no fanouts ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------+
@@ -434,9 +507,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Apr 05 22:04:05 2024
+    Info: Processing started: Sat Apr 06 13:35:19 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ConvCode -c ConvCode
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file src/common/parallel2serial.v
+    Info (12023): Found entity 1: parallel2serial
+Info (12021): Found 1 design units, including 1 entities, in source file src/common/div.v
+    Info (12023): Found entity 1: div
 Info (12021): Found 1 design units, including 1 entities, in source file src/service/encode.v
     Info (12023): Found entity 1: encode
 Info (12021): Found 1 design units, including 1 entities, in source file src/common/counter.v
@@ -446,8 +523,11 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/con
 Info (12021): Found 1 design units, including 1 entities, in source file src/ip/rom.v
     Info (12023): Found entity 1: rom
 Info (12127): Elaborating entity "ConvCode" for the top level hierarchy
+Info (12128): Elaborating entity "div" for hierarchy "div:div_inst"
+Info (12128): Elaborating entity "counter" for hierarchy "div:div_inst|counter:counter_inst"
+Warning (10230): Verilog HDL assignment warning at counter.v(34): truncated value with size 32 to match size of target (2)
 Info (12128): Elaborating entity "counter" for hierarchy "counter:counter_inst"
-Warning (10230): Verilog HDL assignment warning at counter.v(30): truncated value with size 32 to match size of target (11)
+Warning (10230): Verilog HDL assignment warning at counter.v(34): truncated value with size 32 to match size of target (11)
 Info (12128): Elaborating entity "rom" for hierarchy "rom:rom_inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "rom:rom_inst|altsyncram:altsyncram_component"
 Info (12130): Elaborated megafunction instantiation "rom:rom_inst|altsyncram:altsyncram_component"
@@ -485,6 +565,8 @@ Info (12133): Instantiated megafunction "rom:rom_inst|altsyncram:altsyncram_comp
     Info (12134): Parameter "WIDTHAD" = "11"
 Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "rom:rom_inst|altsyncram:altsyncram_component|altsyncram_urb1:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:no_name_gen:info_rom_sr"
 Info (12128): Elaborating entity "encode" for hierarchy "encode:encode_inst"
+Info (12128): Elaborating entity "parallel2serial" for hierarchy "parallel2serial:parallel2serial_inst"
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (13000): Registers with preset signals will power-up high
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
@@ -493,14 +575,14 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 217 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 223 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 206 logic cells
+    Info (21059): Implemented 7 output pins
+    Info (21061): Implemented 209 logic cells
     Info (21064): Implemented 1 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4672 megabytes
-    Info: Processing ended: Fri Apr 05 22:04:07 2024
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4671 megabytes
+    Info: Processing ended: Sat Apr 06 13:35:21 2024
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

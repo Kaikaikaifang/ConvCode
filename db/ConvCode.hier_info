@@ -1,9 +1,26 @@
 |ConvCode
-clk20M_sig => clk20M_sig.IN3
-reset_sig => reset_sig.IN2
-encode_sig[0] <= encode:encode_inst.encode_sig
-encode_sig[1] <= encode:encode_inst.encode_sig
-q_sig <= q_sig.DB_MAX_OUTPUT_PORT_TYPE
+clk20M_sig => clk20M_sig.IN2
+reset_sig => reset_sig.IN4
+encode_sig[0] <= encode_sig[0].DB_MAX_OUTPUT_PORT_TYPE
+encode_sig[1] <= encode_sig[1].DB_MAX_OUTPUT_PORT_TYPE
+serial_encode_sig[0] <= parallel2serial:parallel2serial_inst.serial_sig
+q_sig[0] <= q_sig[0].DB_MAX_OUTPUT_PORT_TYPE
+buffer_sig[0] <= parallel2serial:parallel2serial_inst.buffer_sig
+buffer_sig[1] <= parallel2serial:parallel2serial_inst.buffer_sig
+
+
+|ConvCode|div:div_inst
+clk_sig => clk_sig.IN1
+rst_sig => rst_sig.IN1
+div_sig <= div_sig~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ConvCode|div:div_inst|counter:counter_inst
+clk_sig => counter_sig[0]~reg0.CLK
+clk_sig => counter_sig[-1]~reg0.CLK
+reset_sig => always0.IN1
+counter_sig[0] <= counter_sig[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_sig[-1] <= counter_sig[-1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |ConvCode|counter:counter_inst
@@ -316,5 +333,23 @@ q_sig => Add0.IN1
 q_sig => Add2.IN1
 encode_sig[0] <= encode_sig[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 encode_sig[1] <= encode_sig[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ConvCode|parallel2serial:parallel2serial_inst
+clk_sig => clk_sig.IN1
+reset_sig => reset_sig.IN1
+parallel_sig[0] => buffer_sig.DATAB
+parallel_sig[1] => buffer_sig.DATAB
+serial_sig[0] <= buffer_sig[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buffer_sig[1] <= buffer_sig[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+buffer_sig[0] <= buffer_sig[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ConvCode|parallel2serial:parallel2serial_inst|counter:counter_inst
+clk_sig => counter_sig[0]~reg0.CLK
+clk_sig => counter_sig[-1]~reg0.CLK
+reset_sig => always0.IN1
+counter_sig[0] <= counter_sig[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+counter_sig[-1] <= counter_sig[-1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -47,7 +47,7 @@ ModelSim Info: # Copying E:/Modelsim/win64/../modelsim.ini to modelsim.ini
 ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # vlog -vlog01compat -work altera_ver {e:/quartus/quartus/eda/sim_lib/altera_primitives.v}
 ModelSim Info: # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-ModelSim Info: # Start time: 22:04:25 on Apr 05,2024
+ModelSim Info: # Start time: 13:35:39 on Apr 06,2024
 ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work altera_ver e:/quartus/quartus/eda/sim_lib/altera_primitives.v 
 ModelSim Info: # -- Compiling module global
 ModelSim Info: # -- Compiling module carry
@@ -125,7 +125,7 @@ ModelSim Info: # 	alt_outbuf_tri_diff
 ModelSim Info: # 	alt_iobuf_diff
 ModelSim Info: # 	alt_bidir_diff
 ModelSim Info: # 	alt_bidir_buf
-ModelSim Info: # End time: 22:04:25 on Apr 05,2024, Elapsed time: 0:00:00
+ModelSim Info: # End time: 13:35:39 on Apr 06,2024, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vlib verilog_libs/cycloneiii_ver
@@ -136,7 +136,7 @@ ModelSim Info: # vmap cycloneiii_ver ./verilog_libs/cycloneiii_ver
 ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # vlog -vlog01compat -work cycloneiii_ver {e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v}
 ModelSim Info: # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-ModelSim Info: # Start time: 22:04:25 on Apr 05,2024
+ModelSim Info: # Start time: 13:35:39 on Apr 06,2024
 ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work cycloneiii_ver e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v 
 ModelSim Info: # -- Compiling UDP CYCLONEIII_PRIM_DFFE
 ModelSim Info: # -- Compiling UDP CYCLONEIII_PRIM_DFFEAS
@@ -212,7 +212,7 @@ ModelSim Info: # 	cycloneiii_termination
 ModelSim Info: # 	cycloneiii_jtag
 ModelSim Info: # 	cycloneiii_crcblock
 ModelSim Info: # 	cycloneiii_oscillator
-ModelSim Info: # End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:01
+ModelSim Info: # End time: 13:35:39 on Apr 06,2024, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # if {[file exists gate_work]} {
@@ -226,35 +226,35 @@ ModelSim Info: # Modifying modelsim.ini
 ModelSim Info: # 
 ModelSim Info: # vlog -vlog01compat -work work +incdir+. {ConvCode.vo}
 ModelSim Info: # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-ModelSim Info: # Start time: 22:04:26 on Apr 05,2024
+ModelSim Info: # Start time: 13:35:39 on Apr 06,2024
 ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." ConvCode.vo 
 ModelSim Info: # -- Compiling module ConvCode
 ModelSim Info: # 
 ModelSim Info: # Top level modules:
 ModelSim Info: # 	ConvCode
-ModelSim Info: # End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:00
+ModelSim Info: # End time: 13:35:39 on Apr 06,2024, Elapsed time: 0:00:00
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vlog -vlog01compat -work work +incdir+D:/projects/ConvCode/test {D:/projects/ConvCode/test/ConvCode_tb.v}
 ModelSim Info: # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-ModelSim Info: # Start time: 22:04:26 on Apr 05,2024
+ModelSim Info: # Start time: 13:35:39 on Apr 06,2024
 ModelSim Info: # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/projects/ConvCode/test" D:/projects/ConvCode/test/ConvCode_tb.v 
 ModelSim Info: # -- Compiling module ConvCode_tb
 ModelSim Info: # 
 ModelSim Info: # Top level modules:
 ModelSim Info: # 	ConvCode_tb
-ModelSim Info: # End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:00
+ModelSim Info: # End time: 13:35:40 on Apr 06,2024, Elapsed time: 0:00:01
 ModelSim Info: # Errors: 0, Warnings: 0
 ModelSim Info: # 
 ModelSim Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc"  ConvCode_tb
 ModelSim Info: # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=""+acc"" ConvCode_tb 
-ModelSim Info: # Start time: 22:04:26 on Apr 05,2024
+ModelSim Info: # Start time: 13:35:40 on Apr 06,2024
 ModelSim Info: # ** Note: (vsim-3812) Design is being optimized...
-ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2685) [TFMPC] - Too few port connections for 'u_ConvCode'.  Expected 8, found 4.
-ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
-ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
-ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tck'.
-ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2685) [TFMPC] - Too few port connections for 'u_ConvCode'.  Expected 10, found 6.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+ModelSim Warning: # ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tms'.
 ModelSim Info: # Loading work.ConvCode_tb(fast)
 ModelSim Info: # Loading work.ConvCode(fast)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_io_obuf(fast)
@@ -262,10 +262,10 @@ ModelSim Info: # Loading cycloneiii_ver.cycloneiii_io_ibuf(fast)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_clkctrl(fast)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_mux41(fast)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ena_reg(fast)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_jtag(fast)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
 ModelSim Info: # Loading altera_ver.dffeas(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__1)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_jtag(fast)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__2)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__3)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__4)
@@ -322,6 +322,13 @@ ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__54)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__55)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__56)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__57)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_block(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__1)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__2)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__3)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast)
+ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast__1)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__58)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__59)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__60)
@@ -337,13 +344,6 @@ ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__69)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__70)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__71)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__72)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_block(fast)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__1)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__2)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_register(fast__3)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast__1)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__73)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__74)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__75)
@@ -394,7 +394,6 @@ ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__119)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__120)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__121)
 ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__122)
-ModelSim Info: # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__123)
 ModelSim Info: # Loading instances from ConvCode_v.sdo
 ModelSim Info: # Loading timing data from ConvCode_v.sdo
 ModelSim Info: # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
@@ -407,7 +406,6 @@ ModelSim Info: # .main_pane.structure.interior.cs.body.struct
 ModelSim Info: # view signals
 ModelSim Info: # .main_pane.objects.interior.cs.body.tree
 ModelSim Info: # run 200 us
-ModelSim Info: # Causality operation skipped due to absence of debug database file
-ModelSim Info: # End time: 22:24:38 on Apr 05,2024, Elapsed time: 0:20:12
-ModelSim Info: # Errors: 0, Warnings: 6
+ModelSim Info: # End time: 13:58:59 on Apr 06,2024, Elapsed time: 0:23:19
+ModelSim Info: # Errors: 0, Warnings: 5
 Info: NativeLink simulation flow was successful

@@ -1,5 +1,5 @@
 Flow report for ConvCode
-Fri Apr 05 22:04:18 2024
+Sat Apr 06 13:35:32 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,18 +40,18 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Apr 05 22:04:18 2024      ;
+; Flow Status                        ; Successful - Sat Apr 06 13:35:32 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ConvCode                                   ;
 ; Top-level Entity Name              ; ConvCode                                   ;
 ; Family                             ; Cyclone III                                ;
 ; Device                             ; EP3C25E144C8                               ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 201 / 24,624 ( < 1 % )                     ;
-;     Total combinational functions  ; 178 / 24,624 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 121 / 24,624 ( < 1 % )                     ;
-; Total registers                    ; 121                                        ;
-; Total pins                         ; 5 / 83 ( 6 % )                             ;
+; Total logic elements               ; 203 / 24,624 ( < 1 % )                     ;
+;     Total combinational functions  ; 179 / 24,624 ( < 1 % )                     ;
+;     Dedicated logic registers      ; 125 / 24,624 ( < 1 % )                     ;
+; Total registers                    ; 125                                        ;
+; Total pins                         ; 8 / 83 ( 10 % )                            ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 2,048 / 608,256 ( < 1 % )                  ;
 ; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                            ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/05/2024 22:04:05 ;
+; Start date & time ; 04/06/2024 13:35:19 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ConvCode            ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 84084422453116.171232584520452        ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 84084422453116.171238171909024        ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; ConvCode_tb    ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ConvCode_tb                           ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
@@ -108,12 +108,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4672 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 4955 MB             ; 00:00:02                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 4585 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4671 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 4964 MB             ; 00:00:03                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 4591 MB             ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4548 MB             ; 00:00:00                           ;
-; Total                     ; 00:00:08     ; --                      ; --                  ; 00:00:05                           ;
+; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:06                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

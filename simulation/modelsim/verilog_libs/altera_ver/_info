@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/projects/ConvCode/simulation/modelsim
 valt_bidir_buf
-Z1 !s110 1712325865
+Z1 !s110 1712381739
 !i10b 1
 !s100 a6?6cHeC]_[b_;=i8O1hN3
 I6eVD>?hHJNjcCn^7WDJgK3
@@ -23,7 +23,7 @@ Z6 OL;L;10.5;63
 r1
 !s85 0
 31
-Z7 !s108 1712325865.000000
+Z7 !s108 1712381739.000000
 Z8 !s107 e:/quartus/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|e:/quartus/quartus/eda/sim_lib/altera_primitives.v|
 !i113 0

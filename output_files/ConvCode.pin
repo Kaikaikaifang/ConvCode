@@ -91,7 +91,7 @@ altera_reserved_tdo          : 20        : output : 2.5 V             :         
 nCE                          : 21        :        :                   :         : 1         :                
 clk20M_sig                   : 22        : input  : 2.5 V             :         : 1         : N              
 GND+                         : 23        :        :                   :         : 1         :                
-reset_sig                    : 24        : input  : 2.5 V             :         : 2         : N              
+GND+                         : 24        :        :                   :         : 2         :                
 GND+                         : 25        :        :                   :         : 2         :                
 VCCIO2                       : 26        : power  :                   : 2.5V    : 2         :                
 GND                          : 27        : gnd    :                   :         :           :                
@@ -172,27 +172,27 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : 100       :        :                   :      
 VCCINT                       : 102       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 103       :        :                   :         : 6         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 104       :        :                   :         : 6         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 105       :        :                   :         : 6         :                
+reset_sig                    : 105       : input  : 2.5 V             :         : 6         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 106       :        :                   :         : 6         :                
 VCCA2                        : 107       : power  :                   : 2.5V    :           :                
 GNDA2                        : 108       : gnd    :                   :         :           :                
 VCCD_PLL2                    : 109       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 110       :        :                   :         : 7         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : 111       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 112       :        :                   :         : 7         :                
+buffer_sig[1]                : 112       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 113       :        :                   :         : 7         :                
-encode_sig[0]                : 114       : output : 2.5 V             :         : 7         : N              
+serial_encode_sig[0]         : 114       : output : 2.5 V             :         : 7         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : 115       :        :                   :         : 7         :                
 VCCINT                       : 116       : power  :                   : 1.2V    :           :                
 VCCIO7                       : 117       : power  :                   : 2.5V    : 7         :                
 GND                          : 118       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 119       :        :                   :         : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : 120       :        :                   :         : 7         :                
-encode_sig[1]                : 121       : output : 2.5 V             :         : 7         : N              
+encode_sig[1]                : 119       : output : 2.5 V             :         : 7         : N              
+buffer_sig[0]                : 120       : output : 2.5 V             :         : 7         : N              
+encode_sig[0]                : 121       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : 122       : power  :                   : 2.5V    : 7         :                
 GND                          : 123       : gnd    :                   :         :           :                
 VCCINT                       : 124       : power  :                   : 1.2V    :           :                
-q_sig                        : 125       : output : 2.5 V             :         : 7         : N              
+q_sig[0]                     : 125       : output : 2.5 V             :         : 7         : N              
 GND+                         : 126       :        :                   :         : 7         :                
 GND+                         : 127       :        :                   :         : 7         :                
 GND+                         : 128       :        :                   :         : 8         :                

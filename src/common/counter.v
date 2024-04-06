@@ -8,12 +8,13 @@
 // Description: 计数器
 // Parameter:
 // 1. NUM: 计数器的最大值
-// 2. LEN: 计数器的长度
 // Input:
 // 1. clk_sig: 时钟信号
 // 2. reset_sig: 复位信号
 // Output:
 // 1. counter_sig: 计数器的值
+// Notice:
+// 1. 计数器的值从 0 开始
 // ************************************************************
 module counter #(
     parameter NUM = 11'b111_1111_1111

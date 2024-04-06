@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dD:/projects/ConvCode/simulation/modelsim
 vcycloneiii_and1
-Z1 !s110 1712325866
+Z1 !s110 1712381739
 !i10b 1
 !s100 XlocMKg_ld;hac3WMePko0
 Ig^G9`?9nX:NeK;>?_6:T53
@@ -23,7 +23,7 @@ Z6 OL;L;10.5;63
 r1
 !s85 0
 31
-Z7 !s108 1712325865.000000
+Z7 !s108 1712381739.000000
 Z8 !s107 e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|cycloneiii_ver|e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v|
 !i113 0
@@ -219,7 +219,7 @@ R9
 R10
 R11
 vcycloneiii_dffe
-Z12 !s110 1712325865
+R1
 !i10b 1
 !s100 C@zm7bo1>e9==OU7<Pj?[2
 In[aL7@5NMnbjN4g?dN9L00
@@ -534,7 +534,7 @@ R9
 R10
 R11
 vcycloneiii_mux21
-R12
+R1
 !i10b 1
 !s100 _`J?e8A47Q>1de0I`TP982
 I73@3idl=64?W1^`PU8L5S1
@@ -681,7 +681,7 @@ R9
 R10
 R11
 UCYCLONEIII_PRIM_DFFE
-R12
+R1
 !i10b 1
 !s100 joXVOjz@FJXL<C@0gPahi1
 Ic6Si0YL`U:T^hgQ>e<Zm63
@@ -703,7 +703,7 @@ R10
 R11
 n@c@y@c@l@o@n@e@i@i@i_@p@r@i@m_@d@f@f@e
 UCYCLONEIII_PRIM_DFFEAS
-R12
+R1
 !i10b 1
 !s100 3jF;cm:44hb:BKz6IWbE>1
 ILfR9J^03O:1S;6Obh1cGU2
@@ -725,7 +725,7 @@ R10
 R11
 n@c@y@c@l@o@n@e@i@i@i_@p@r@i@m_@d@f@f@e@a@s
 UCYCLONEIII_PRIM_DFFEAS_HIGH
-R12
+R1
 !i10b 1
 !s100 kgbMZKC57BmXR;H2ceojk1
 Ie:kzGidgXDBBV6^T7;bdG1

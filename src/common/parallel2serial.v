@@ -24,10 +24,11 @@ module parallel2serial #(
     input                     clk_sig,
     input                     reset_sig,     // 复位信号 低电平有效
     input       [WIDTH - 1:0] parallel_sig,  // 并行信号
-    output wire [        0:0] serial_sig     // 串行信号
+    output wire [        0:0] serial_sig,    // 串行信号
+    output reg  [0:WIDTH - 1] buffer_sig
 );
 
-    reg  [WIDTH - 1:0] buffer_sig;
+    // reg  [0:WIDTH - 1] buffer_sig;
     wire [WIDTH - 1:0] counter_sig;
 
     // 1. 初始化
@@ -44,12 +45,14 @@ module parallel2serial #(
         .counter_sig(counter_sig)
     );
 
-    // 3. 缓存: 寄存器右移
+    // 3. 缓存
     always @(posedge clk_sig) begin
         if (!reset_sig) begin
             buffer_sig <= 0;
+        end else if (counter_sig == 0) begin
+            buffer_sig <= parallel_sig;
         end else begin
-            buffer_sig <= {buffer_sig[0], buffer_sig[(WIDTH-1):1]};
+            buffer_sig <= {buffer_sig[1:(WIDTH-1)], buffer_sig[0]};
         end
     end
 

@@ -26,7 +26,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {e:/quartus/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 22:04:25 on Apr 05,2024
+# Start time: 13:35:39 on Apr 06,2024
 # vlog -reportprogress 300 -vlog01compat -work altera_ver e:/quartus/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -104,7 +104,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 22:04:25 on Apr 05,2024, Elapsed time: 0:00:00
+# End time: 13:35:39 on Apr 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cycloneiii_ver
@@ -115,7 +115,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cycloneiii_ver {e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 22:04:25 on Apr 05,2024
+# Start time: 13:35:39 on Apr 06,2024
 # vlog -reportprogress 300 -vlog01compat -work cycloneiii_ver e:/quartus/quartus/eda/sim_lib/cycloneiii_atoms.v 
 # -- Compiling UDP CYCLONEIII_PRIM_DFFE
 # -- Compiling UDP CYCLONEIII_PRIM_DFFEAS
@@ -191,7 +191,7 @@
 # 	cycloneiii_jtag
 # 	cycloneiii_crcblock
 # 	cycloneiii_oscillator
-# End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:01
+# End time: 13:35:39 on Apr 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists gate_work]} {
@@ -205,35 +205,35 @@
 # 
 # vlog -vlog01compat -work work +incdir+. {ConvCode.vo}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 22:04:26 on Apr 05,2024
+# Start time: 13:35:39 on Apr 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+." ConvCode.vo 
 # -- Compiling module ConvCode
 # 
 # Top level modules:
 # 	ConvCode
-# End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:00
+# End time: 13:35:39 on Apr 06,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+D:/projects/ConvCode/test {D:/projects/ConvCode/test/ConvCode_tb.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 22:04:26 on Apr 05,2024
+# Start time: 13:35:39 on Apr 06,2024
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/projects/ConvCode/test" D:/projects/ConvCode/test/ConvCode_tb.v 
 # -- Compiling module ConvCode_tb
 # 
 # Top level modules:
 # 	ConvCode_tb
-# End time: 22:04:26 on Apr 05,2024, Elapsed time: 0:00:00
+# End time: 13:35:40 on Apr 06,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs="+acc"  ConvCode_tb
 # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -L altera_ver -L cycloneiii_ver -L gate_work -L work -voptargs=""+acc"" ConvCode_tb 
-# Start time: 22:04:26 on Apr 05,2024
+# Start time: 13:35:40 on Apr 06,2024
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2685) [TFMPC] - Too few port connections for 'u_ConvCode'.  Expected 8, found 4.
-# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
-# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
-# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tck'.
-# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(36): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tms'.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2685) [TFMPC] - Too few port connections for 'u_ConvCode'.  Expected 10, found 6.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdo'.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tdi'.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tck'.
+# ** Warning: D:/projects/ConvCode/test/ConvCode_tb.v(40): (vopt-2718) [TFMPC] - Missing connection for port 'altera_reserved_tms'.
 # Loading work.ConvCode_tb(fast)
 # Loading work.ConvCode(fast)
 # Loading cycloneiii_ver.cycloneiii_io_obuf(fast)
@@ -241,10 +241,10 @@
 # Loading cycloneiii_ver.cycloneiii_clkctrl(fast)
 # Loading cycloneiii_ver.cycloneiii_mux41(fast)
 # Loading cycloneiii_ver.cycloneiii_ena_reg(fast)
-# Loading cycloneiii_ver.cycloneiii_jtag(fast)
-# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
 # Loading altera_ver.dffeas(fast)
+# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__1)
+# Loading cycloneiii_ver.cycloneiii_jtag(fast)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__2)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__3)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__4)
@@ -301,6 +301,13 @@
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__55)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__56)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__57)
+# Loading cycloneiii_ver.cycloneiii_ram_block(fast)
+# Loading cycloneiii_ver.cycloneiii_ram_register(fast)
+# Loading cycloneiii_ver.cycloneiii_ram_register(fast__1)
+# Loading cycloneiii_ver.cycloneiii_ram_register(fast__2)
+# Loading cycloneiii_ver.cycloneiii_ram_register(fast__3)
+# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast)
+# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast__1)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__58)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__59)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__60)
@@ -316,13 +323,6 @@
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__70)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__71)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__72)
-# Loading cycloneiii_ver.cycloneiii_ram_block(fast)
-# Loading cycloneiii_ver.cycloneiii_ram_register(fast)
-# Loading cycloneiii_ver.cycloneiii_ram_register(fast__1)
-# Loading cycloneiii_ver.cycloneiii_ram_register(fast__2)
-# Loading cycloneiii_ver.cycloneiii_ram_register(fast__3)
-# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast)
-# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator(fast__1)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__73)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__74)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__75)
@@ -373,7 +373,6 @@
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__120)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__121)
 # Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__122)
-# Loading cycloneiii_ver.cycloneiii_lcell_comb(fast__123)
 # Loading instances from ConvCode_v.sdo
 # Loading timing data from ConvCode_v.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
@@ -386,6 +385,5 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run 200 us
-# Causality operation skipped due to absence of debug database file
-# End time: 22:24:38 on Apr 05,2024, Elapsed time: 0:20:12
-# Errors: 0, Warnings: 6
+# End time: 13:58:59 on Apr 06,2024, Elapsed time: 0:23:19
+# Errors: 0, Warnings: 5
