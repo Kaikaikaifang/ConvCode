@@ -103,20 +103,6 @@ module ConvCode (
         .parallel_sig(parallel_encode_noise_sig)  // 编码后加噪并行信号 2 位 5 MHz
     );
 
-    // // 7. 信道解码
-    // viterbi viterbi_inst (
-    //     .clk           (clk10M_sig),
-    //     .reset         (reset_sig),
-    //     .source_rdy    (1),
-    //     .sink_val      (1),
-    //     .rr            (parallel_encode_noise_sig),
-    //     .eras_sym      (2'b00),
-    //     .sink_rdy      (),
-    //     .source_val    (),
-    //     .decbit        (decode_sig),
-    //     .normalizations()
-    // );
-
     // 7. (2, 1, 3) 卷积码解码
     eVITERBI_213 viterbi_inst (
         .clock(clk10M_sig),
