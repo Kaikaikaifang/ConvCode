@@ -6,7 +6,7 @@
 
 > 项目目录结构
 
-```bash
+```shell
 .
 ├── README.md     # 本文件
 ├── ConvCode.qpf  # 项目文件
