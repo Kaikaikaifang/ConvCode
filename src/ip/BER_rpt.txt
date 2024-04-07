@@ -1,1 +1,0 @@
-Cannot read numerr port as ber is set to unused
