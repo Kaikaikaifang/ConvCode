@@ -2,6 +2,10 @@
 
 > 基于 Verilog 的 (2, 1, 3) 卷积码的编译码实验
 
+![Modelsim simulation](assets/images/e213_decode.png)
+
+![iVerilog simulation](assets/images/viterbi_decode.png)
+
 ## Tree
 
 > 项目目录结构
