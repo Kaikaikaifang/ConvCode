@@ -32,7 +32,7 @@ module mseries #(
         if (rst_sig == 0) begin  // negedge reset
             m_r <= ~(0);
         end else begin
-            m_r <= m_r << 1;  // shift reg
+            m_r <= m_r << 1'b1;  // shift reg
             case (M)
                 2: m_r[0] <= m_r[1] ^ m_r[0];
                 3: m_r[0] <= m_r[2] ^ m_r[1];

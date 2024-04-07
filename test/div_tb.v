@@ -5,8 +5,8 @@ module div_tb;
 
     // div Parameters
     parameter PERIOD = 50;
-    parameter NUM = 4;
-    parameter DUTY = 2;
+    parameter NUM = 2;
+    parameter DUTY = 1;
 
     /*iverilog */
     initial begin
@@ -21,6 +21,7 @@ module div_tb;
 
     // div Outputs
     wire div_sig;
+    reg  clk_2_sig = 0;
 
     always begin
         #(PERIOD / 2) clk_sig = ~clk_sig;
@@ -30,12 +31,13 @@ module div_tb;
         #(PERIOD * 2) rst_sig = 1;
     end
 
+    always @(posedge clk_sig) clk_2_sig <= ~clk_2_sig;
+
     div #(
         .NUM (NUM),
         .DUTY(DUTY)
     ) u_div (
         .clk_sig(clk_sig),
-        .rst_sig(rst_sig),
 
         .div_sig(div_sig)
     );

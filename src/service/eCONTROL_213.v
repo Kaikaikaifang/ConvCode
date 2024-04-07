@@ -231,7 +231,7 @@ module eCONTROL_213 (
 
                 trace_ptr     <= `T - 1;
                 we            <= 0;
-                te            <= 1;
+                te            <= 1'b1;
                 tb_reg        <= min_state;
                 oe            <= 0;
             end
@@ -252,7 +252,7 @@ module eCONTROL_213 (
                 A6        <= A6_in;
                 A7        <= A7_in;
 
-                write_ptr <= write_ptr + 1;
+                write_ptr <= write_ptr + 1'b1;
                 tb_reg    <= min_state;
                 we        <= 1;
                 te        <= 0;
@@ -282,7 +282,7 @@ module eCONTROL_213 (
                 P6[write_ptr] <= P6_in;
                 P7[write_ptr] <= P7_in;
 
-                write_ptr     <= write_ptr + 1;
+                write_ptr     <= write_ptr + 1'b1;
                 tb_reg        <= min_state;
                 we            <= 1;
                 te            <= 0;
@@ -327,7 +327,7 @@ module eCONTROL_213 (
                     3'b110: tb_reg <= {P6[trace_ptr], tb_reg[2:1]};
                     3'b111: tb_reg <= {P7[trace_ptr], tb_reg[2:1]};
                 endcase  // case(tb_reg)
-                trace_ptr <= trace_ptr - 1;  // Point to the previous trace word
+                trace_ptr <= trace_ptr - 1'b1;  // Point to the previous trace word
 
             end  // if (te && !last_trace)
 
@@ -369,7 +369,7 @@ module eCONTROL_213 (
                 $display("# COND is oe && block_count >0 #");
                 $display("###############################");
 
-                block_count <= block_count - 1;
+                block_count <= block_count - 1'b1;
 
                 we          <= 1;
                 te          <= 0;

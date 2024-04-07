@@ -39,20 +39,20 @@ module e213_tb;
     VIT_ENC TB_U1 (
         .Vx   (Vx),
         .Ux   (Ux),
-        .tb_en(tb_en),
         .clock(clock),
-        .reset(reset)
+        .reset(reset),
+        .tb_en(tb_en)
     );
 
     /*===  Instantiate a the (2,1,3) decoder ===*/
     eVITERBI_213 TB_U2 (
         .Dx   (Dx),
-        .Dx_oe(DX_oe),
-        .tb_en(tb_en),
+        .Dx_oe(Dx_oe),
         .error(error),
         .Rx   (Vx),
         .clock(clock),
-        .reset(reset)
+        .reset(reset),
+        .tb_en(tb_en)
     );
 
 
@@ -88,7 +88,7 @@ module e213_tb;
 
             for (vector_bit = `BLOCK_LEN - 1; vector_bit >= 0; vector_bit = vector_bit - 1) begin
                 Ux = U_data[vector_bit];
-                #`CLOCK_PERIOD;
+                #`CLOCK_PERIOD;  // 
             end
 
         end  // for (vector=0; vector<10; vector=vector+1)

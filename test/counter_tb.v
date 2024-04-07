@@ -5,15 +5,14 @@ module counter_tb;
 
     // counter Parameters
     parameter PERIOD = 50;
-    parameter NUM = 11'b111_1111_1111;
-    parameter LEN = 11;
+    parameter NUM = 16;
 
     // counter Inputs
-    reg                clk_sig = 0;
-    reg                reset_sig = 0;
+    reg                        clk_sig = 0;
+    reg                        reset_sig = 0;
 
     // counter Outputs
-    wire [(LEN - 1):0] counter_sig;
+    wire [$clog2(NUM- 1)- 1:0] counter_sig;
 
     /*iverilog */
     initial begin
@@ -36,7 +35,7 @@ module counter_tb;
         .clk_sig  (clk_sig),
         .reset_sig(reset_sig),
 
-        .counter_sig(counter_sig[(LEN-1):0])
+        .counter_sig(counter_sig[$clog2(NUM-1)-1:0])
     );
 
     initial begin

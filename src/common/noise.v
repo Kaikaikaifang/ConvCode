@@ -35,7 +35,7 @@ module noise #(
 
     // 2. 记数
     counter #(
-        .NUM(INTERVAL)
+        .NUM(INTERVAL + 1)
     ) counter_inst (
         .clk_sig    (clk_sig),
         .reset_sig  (reset_sig),

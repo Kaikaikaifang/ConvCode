@@ -46,7 +46,7 @@ CONTENT BEGIN
 
 
 if __name__ == "__main__":
-    text_path = os.path.join(os.path.dirname(__file__), "../assets/codeFile.txt")
-    mif_path = os.path.join(os.path.dirname(__file__), "../assets/data.mif")
-    text2mif(text_path, mif_path, depth=2048, width=1, data_radix="BIN")
+    text_path = os.path.join(os.path.dirname(__file__), "../assets/bianma_result.txt")
+    mif_path = os.path.join(os.path.dirname(__file__), "../assets/bianma_result.mif")
+    text2mif(text_path, mif_path, depth=166, width=1, data_radix="BIN")
     print(f"文本文件转换为 mif 文件成功: {mif_path}")
